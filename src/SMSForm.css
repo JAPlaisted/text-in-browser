@@ -1,0 +1,37 @@
+.sms-form {
+    text-align: left;
+    padding: 1rem;
+  }
+  .sms-form label {
+    display: block;
+  }
+  .sms-form input,
+  .sms-form textarea {
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .sms-form div {
+    margin-bottom: 0.5rem;
+  }
+  .sms-form button {
+    font-size: 1rem;
+    width: 100%;
+  }
+  .sms-form.error {
+    outline: 2px solid #f00;
+  }
+  
+  .container--form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .container--form > textarea {
+    margin-bottom:10px
+  }
+
+  p { 
+    margin-bottom: 10rem;
+  }
