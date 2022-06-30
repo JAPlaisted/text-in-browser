@@ -7,7 +7,7 @@ class SMSForm extends Component {
     this.state = {
       message: {
         to: "",
-        body: "",
+        body: "Thank you for signing up for the Audbile 2-1 sale text notifications, we will inform you when this sale is next active.",
       },
       submitting: false,
       error: false,
@@ -50,39 +50,34 @@ class SMSForm extends Component {
         }
       });
   }
+
   render() {
     return (
       <div className="container center">
-        <p>
-          This application allows you to send an SMS message via the Twilio API{" "}
-          <br />
-          Enter the phone number you wish to send a message to, type up a
-          message in the body, and send!
-        </p>
+        <h1>
+          Audible 2-1 Sale <br />
+          <sub>Text notifications</sub>
+        </h1>
 
         <form
           onSubmit={this.onSubmit}
           className={this.state.error ? "error sms-form" : "sms-form"}
         >
           <div className="container--form">
-            <label htmlFor="to">To:</label>
+            <label htmlFor="to">Phone Number:</label>
             <input
               type="tel"
               name="to"
               id="to"
               value={this.state.message.to}
               onChange={this.onHandleChange}
+              placeholder="123-456-7890"
             />
-            <div className="container--form">
-              <label htmlFor="body">Body:</label>
-              <textarea
-                name="body"
-                id="body"
-                value={this.state.message.body}
-                onChange={this.onHandleChange}
-              />
-            </div>
-            <button type="submit">Send Message</button>
+
+            <button type="submit" class="custom-btn btn-12">
+              <span>Good Choice!</span>
+              <span>SIGN UP</span>
+            </button>
           </div>
         </form>
       </div>
