@@ -1,25 +1,45 @@
 body {
   margin: 0;
-  background: url(https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3090&q=80);
-  color: rgb(255, 255, 255);
+  background-color: #ffffff;
+  color: rgb(58, 58, 58);
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-family: 'PT Sans', sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+body {
+  color: rgb(255, 255, 255);
+}
 }
 
 
 
 h1 {
-  font-family: 'Lobster', cursive;
-  font-size:  6rem;
+  font-size:  3rem;
+}
+
+h1 span::after {
+  content: url(./audible.svg);
 }
 
 h1 sub {
-  font-size:  2rem;
+  font-size:  1rem;
   position: relative;
   top: -4rem;
 }
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size:  6rem;
+  }
+
+  h1 sub {
+    font-size:  2rem;
+
+  }
+  }
 
 .container {
   max-width: 1148px;
@@ -39,10 +59,9 @@ h1 sub {
 }
 
 
-
 @media screen and (min-width: 768px) {
   .container {
-    background-color: #0e141cb9;
+    background: #0e141cb9;
     border-radius: 40px;
     padding: 3rem;
   }
@@ -61,9 +80,7 @@ h1 sub {
 }
 
 .container--form input:focus {
-  border: 3px solid rgb(2,136,249);
-  box-shadow: 2px 5px 5px rgb(2,136,249);
-
+  border: 3.5px solid #f8a941;
 }
 
 
@@ -74,7 +91,7 @@ h1 sub {
   height: 40px;
   color: #fff;
   border-radius: 5px;
-  padding: 10px 25px;
+  padding: 0;
   font-family: 'Lato', sans-serif;
   font-weight: 500;
   background: transparent;
@@ -86,6 +103,12 @@ h1 sub {
    7px 7px 20px 0px rgba(0,0,0,.1),
    4px 4px 5px 0px rgba(0,0,0,.1);
   outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .custom-btn {
+    padding: 10px 25px;
+  }
 }
 
 .btn-12{

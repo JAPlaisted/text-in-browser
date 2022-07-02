@@ -55,8 +55,8 @@ class SMSForm extends Component {
     return (
       <div className="container center">
         <h1>
-          Audible 2-1 Sale <br />
-          <sub>Text notifications</sub>
+          <span>audible</span> <br />
+          <sub>2-1 Sale Text notifications</sub>
         </h1>
 
         <form
@@ -64,7 +64,6 @@ class SMSForm extends Component {
           className={this.state.error ? "error sms-form" : "sms-form"}
         >
           <div className="container--form">
-            <label htmlFor="to">Phone Number:</label>
             <input
               type="tel"
               name="to"
@@ -75,7 +74,7 @@ class SMSForm extends Component {
             />
 
             <button type="submit" class="custom-btn btn-12">
-              <span>Good Choice!</span>
+              <span>Thanks!</span>
               <span>SIGN UP</span>
             </button>
           </div>
