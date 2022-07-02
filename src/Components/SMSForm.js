@@ -73,7 +73,7 @@ class SMSForm extends Component {
               placeholder="123-456-7890"
             />
 
-            <button type="submit" class="custom-btn btn-12">
+            <button type="submit" className="custom-btn btn-12">
               <span>Thanks!</span>
               <span>SIGN UP</span>
             </button>
