@@ -62,6 +62,7 @@ class SMSForm extends Component {
         <form
           onSubmit={this.onSubmit}
           className={this.state.error ? "error sms-form" : "sms-form"}
+          data-netlify="true"
         >
           <div className="container--form">
             <input
