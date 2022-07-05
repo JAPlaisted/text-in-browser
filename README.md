@@ -1,6 +1,15 @@
-# React application with Express server
+# Audible Sale Web Scraper
+
+This site allows users to enter their phone number and receive a text message when the Audible 2-1 sale becomes active. An otherwise hushed affair. 
+
+This project utilizes React.js, Express.js, and the Twilio API
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app). Then an Express server was added in the `server` directory. The server is proxied via the `proxy` key in `package.json`.
+
+
+## Site Screenshots
+
+![audibleScraper](https://user-images.githubusercontent.com/55415399/177395383-91f7f6cc-025a-4e7d-b5e3-c4bfa777f083.PNG)
 
 ## Using this project
 
