@@ -63,6 +63,7 @@ class SMSForm extends Component {
           onSubmit={this.onSubmit}
           className={this.state.error ? "error sms-form" : "sms-form"}
           data-netlify="true"
+          name="text-notifications"
         >
           <div className="container--form">
             <input
@@ -74,7 +75,7 @@ class SMSForm extends Component {
               placeholder="123-456-7890"
             />
 
-            <button type="submit" className="custom-btn btn-12">
+            <button name="submit" type="submit" className="custom-btn btn-12">
               <span>Thanks!</span>
               <span>SIGN UP</span>
             </button>
